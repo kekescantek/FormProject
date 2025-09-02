@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scoias.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <form action="C:\xampp\htdocs\project-form\nice.php" method="post" enctype="multipart/form-data">
+        <h1>Formulir Pendaftaran Siswa Baru</h1>
+            <div class="info">
+                <label>Nama Lengkap:</label>
+                <input type="text" name="nama" required>
+            </div>
+            <div class="info">
+                <label for="nisn">NISN/NIS</label>
+                <input type="text" name="nisn" id="nisn" required>
+            </div>
+            <div class="jeniskelamin">
+                <label for="gender">Jenis Kelamin</label>
+                <p>
+                    Laki - Laki
+                    <input type="radio" name="gender" class="gender" value="Laki-laki" required>
+                    Perempuan
+                    <input type="radio" name="gender" class="gender" value="Perempuan" required>
+                </p>
+            </div>
+            <div class="kelahiran">
+                <label>Tempat Lahir :</label>
+                <input type="text" name="tempat" required>
+            </div>
+
+            <div class="kelahiran">
+                <label>Tanggal Lahir :</label>
+                <input type="date" name="tanggal" required>
+            </div>
+
+            <div class="alamat">
+                <label>Alamat</label>
+                <textarea name="alamat" required></textarea>
+            </div>
+
+            <div class="nomor">
+                <label>Nomor Telepon :</label>
+                <input type="number" name="telepon" required>
+            </div>
+
+            <div class="infor">
+                <label>Email</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="select">
+                <label>Jurusan Yang Dipilih</label>
+                <select name="jurusan" required>
+                    <option value="" disabled selected>Pilih Jurusan</option>
+                    <option value="RPL">RPL</option>
+                    <option value="TKJ">TKJ</option>
+                </select>
+            </div>
+
+            <div class="upload">
+                <label for="file-input">Upload File</label>
+                <input class="uploadcard" type="file" name="files" id="file-input" required>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
+            </div>
+    </form>
+</body>
+</html>
